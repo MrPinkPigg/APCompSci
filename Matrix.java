@@ -93,9 +93,30 @@ public class Matrix {
     /**
      * 
      */
-    /*public Matrix mult (Matrix a, Matrix b){
+    public Matrix mult (Matrix a, Matrix b) throws MatrixException{
+        int aRows = a.rowLength;
+        int aCols = a.colLength;
+        int bRows = b.rowLength;
+        int bCols = b.colLength;
 
-    }*/
+        if(a == null || b == null){
+            throw new MatrixException("Empty Matrix");
+        }
+        else if(aRows != bCols || aCols != bRows){
+            throw new MatrixException("Inequal Matricies");
+        }
+        
+        Matrix prod = new Matrix(aRows, bCols);
+        double answ;
+        
+        for(int x = 0; x <= aRows; x++){
+            for(int y = 0; y <= bCols; y++){
+                
+            }
+        }
+        
+        return prod;
+    }
 
     /**
      * 
