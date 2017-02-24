@@ -10,6 +10,7 @@ public class Matrix {
     int rowLength;
     int colLength;
     double [][] matrix;
+
     /**
      * Constructor that creates matricies
      * @param  row number of rows
@@ -129,10 +130,11 @@ public class Matrix {
         
         Matrix prod = new Matrix(aRows, bCols);
         double answ;
-        double sum = 0;
+        double sum;
         
         for(int x = 0; x < aRows; x++){
             for(int y = 0; y < bCols; y++){
+                sum = 0;
                 for(int z = 0; z < aCols; z++){
                 	answ = a.get(x, z) * b.get(z, y);
                 	sum = sum + answ;
