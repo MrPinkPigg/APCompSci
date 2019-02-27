@@ -1,2 +1,5 @@
 # APCompSci
-Just programs and such from AP Computer Science
+
+Projects from AP Computer Science
+
+most of the course was just practice tests though
